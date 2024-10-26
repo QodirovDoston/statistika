@@ -25,7 +25,7 @@ const Header = () => {
   ]
   return (
     <header className="shadow-header">
-      <div className="bg-blue py-3">
+      <div className="bgcolor py-3">
         <div className="container">
 
           <div className="flex justify-between">
@@ -37,15 +37,11 @@ const Header = () => {
               {/* header left */}
               <div className="space-y-1">
 
-                <h1>ELEKTRON SOLIQ HIZMATLAR</h1>
+                <h1>O‘ZBEKISTON RESPUBLIKASI PREZIDENTI HUZURIDAGI
+                STATISTIKA AGENTLIGI</h1>
 
-                <p className="text-white text-base font-medium">Soliq organlarining elektron davlat xizmatlari portali</p>
-
-                <h3 className="text-xl">MY.SOLIQ.UZ <span className="text-base font-normal text-white ml-2 font-genrik">
-                  Soliq majburiyatlarini bajarishning <br />ishonchli va qulay usuli</span>
-
-                </h3>
-
+                <p className="text-white text-base font-medium">TOSHKENT VILOYATI
+                STATISTIKA BOSHQARMASI</p>
                 <p className="font-dancing text-base font-normal text-white"></p>
 
               </div>
@@ -54,17 +50,17 @@ const Header = () => {
 
             {/* header right */}
             <div>
-              <div className="flex items-center space-x-2">
+              <div className="items-center space-x-2 ">
                 <p className="text-[#628AE6] text-sm font-normal cursor-pointer">Avtoinformator:</p>
-                <span className="text-base font-normal text-white ml-1 cursor-pointer">(0 371) 202-32-82</span>
+                <span className="text-base font-normal text-white ml-1 cursor-pointer">(93) 202-32-82</span>
               </div>
 
               <div className="flex items-center space-x-4 mt-5">
-                <button className="nav-btn text-white border text-sm hover:bg-white hover:text-blue duration-300">
-                  <i class="bi bi-person-lines-fill mr-2"></i>Ro'yxatdan o'tish
+                <button className="nav-btn text-white border text-sm hover:bg-white hover:text-blue duration-300 flex">
+                  <i class="bi bi-person-lines-fill mr-2"></i> Call
                 </button>
 
-                <button className="nav-btn text-white border text-sm hover:bg-white hover:text-blue duration-300">
+                <button className="nav-btn text-white border text-sm hover:bg-white hover:text-blue duration-300 flex">
                   <i class="bi bi-shield-fill-exclamation mr-2"></i>ERI qanday
                   olinadi?
                 </button>

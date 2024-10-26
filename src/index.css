@@ -9,6 +9,11 @@
   @apply max-w-1160 mx-auto px-5;
 }
 
+.bgcolor {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+}
+
 /* base */
 @layer base {
   html {
@@ -35,13 +40,14 @@
   }
 
   .header-btn {
-    @apply px-2 py-0.5  rounded-sm;
+    @apply px-2 py-0.5 rounded-sm;
   }
 }
 
 a.active {
   @apply bg-blue text-white;
 }
+
 /* .ant-table-wrapper {
   @apply !w-full;
 } */

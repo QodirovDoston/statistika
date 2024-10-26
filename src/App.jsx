@@ -14,8 +14,8 @@ const App = () => {
   return (
     <>
       <Header />
-      <main className='flex flex-col md:flex-row space-y-5 md:space-y-0 container space-x-5 py-10'>
-        <Personal />
+      <div className='headBG'>
+      <main className='flex flex-col md:flex-row space-y-5 md:space-y-0 container space-x-5 py-10 '>
         <div className='flex-grow'>
           <Routes>
             <Route path='/' element={<Portal />} />
@@ -24,7 +24,9 @@ const App = () => {
             <Route path='/questions' element={<Sorov />} />
           </Routes>
         </div>
+        <Personal />
       </main>
+      </div>
       <Footer />
     </>
   )

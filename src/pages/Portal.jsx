@@ -9,33 +9,30 @@ const Portal = () => {
                         Портал хақида
                     </h3>
                 </div>
-                <div className='bg-white py-2 px-5'>
+                <div className='bg-light-gray m-5 rounded-lg p-6 border-2 border-card-border shadow-inner cursor-pointer transform transition duration-300 ease-in-out hover:scale-105'>
                     <h2 className='text-black mt-5'>
-                        MY.SOLIQ.UZ - СОЛИҚ МАЖБУРИЯТЛАРИНИ БАЖАРИШНИНГ ИШОНЧЛИ ВА ҚУЛАЙ УСУЛИ
+                    O‘zbekiston statistika tizimidagi ma’lumotlarni to‘plash, saqlash va tahlil qilish
                     </h2>
                     <p>
-                        Давлат солиқ хизмати органларининг янги “Электрон солиқ хизматлари” портали ишга туширилди.
+                    Statistika tizimi uchun yangi raqamli platformaning maqsadlari quyidagilarni o‘z ichiga oladi:
                         <br />
-                        «Электрон давлат хизматлар» портали «Солиқ» ахборот тизимлари комплексини солиқ солиш соҳасида интерактив хизматларни кўрсатиш учун интеграция қилиш лойиҳаси доирасида ишлаб чиқилган.
+                        Ma’lumotlarni to‘plash: Yangi raqamli platforma, O‘zbekiston statistika tizimidagi turli sohalarda mavjud bo‘lgan ma’lumotlarni to‘plab olish imkoniyatini beradi. Bu ma’lumotlar aholi demografik, iqtisodiy, sotsiologik, geografik, ta’lim, kasb-hunar va boshqa sohalarga oid bo‘lishi mumkin. Platforma orqali ma’lumotlar avtomatik ravishda yig‘iladi va qayta ishlash jarayoni avtomatlashtiriladi, shuningdek, ma’lumotlar yig‘ilganligi to‘g‘risida iste’molchilar tezkor va osonlik bilan xabar qilinadi.   <br />
+                        Ma’lumotlarni saqlash: Yangi raqamli platforma, to‘planadigan ma’lumotlarni to‘g‘ridan-to‘g‘ri saqlash imkoniyatini beradi. Bu sayda to‘plangan ma’lumotlar uzun muddatda saqlanishi, arxivlashi va ularga oson va tezlik bilan kirish imkoniyatini ta’minlayadi. Bu shu bilan birga, ma’lumotlar ustida kerakli muhokama va tahlillarni olib borish, ma’lumotlarni tarqatish va ularga ko‘p o‘zgaruvchanliklarni qo‘shish ham osonlashtiriladi. <br />
+                        Ma’lumotlarni tahlil qilish: Yangi raqamli platforma, to‘plangan ma’lumotlarni tahlil etish uchun muhim asboblar va funksiyalarni taqdim etadi. Bu tahlil jarayoni orqali ma’lumotlardan statistik analizlar, grafiklar, infografikalar va boshqa vizualizatsiyalar yaratish imkoniyati beriladi. Bu, statistik ma’lumotlarning vizual ravishda o‘qilishi, tahlili va tushunchalarni osonlashtirishi, ma’lumotlarning aniq va qulay ko‘rishni ta’minlash imkoniyatini beradi.
                         <br />
-                        Ушбу лойиҳанинг асосий мақсади –давлат солиқ хизмати органлари томонидан аҳоли ва бизнесга кўрсатиладиган электрон давлат хизматларини оптималлаштириш, уларнинг сифатини ошириш, харажатларни камайтириш ва натижада солиқ тўловчиларнинг хизматлардан фойдаланиш даражасини оширишдан иборат.
-                        <br />
-                        Қисқа давр ичида Давлат солиқ қўмитасининг маълумотларни қайта ишлаш маркази асосида алоҳида инфратузилма, маълумотлар базаси ва уларни бошқаришда қўлланиладиган дастурий махсулотлар яратилди. Электрон хизматларни бошқариш, уларнинг сифат кўрсаткичларини мониторинг қилиш, фойдаланиш статистикасини шакллантириш ҳамда вертикал назорат олиш бориш учун махсус ахборот тизимлари ишлаб чиқилди.
-                        <br />
-                        Умуман олганда бугун янги «Электрон солиқ хизматлар» портал ишлаб чиқилиб, тест режимида амалиётга жорий қилинди. Хўш, бу билан нима ўзгарди?
-                    </p>
+                        Ma’lumotlarning taqsimlanishi va integratsiyasi: Yangi raqamli platforma, O‘zbekiston statistika tizimi bilan integratsiyani rivojlantirishga yordam beradi. Bu platforma orqali turli sohalar bo‘yicha to‘planadigan ma’lumotlar o‘zaro bog‘liqligini o‘zgartiradi va ularga oson va tezlik bilan kirish imkoniyatini beradi. Bu, tizimning ma’lumotlarni samarali tarqatishini va ularda qo‘shimcha imkoniyatlarni yaratishini ta’minlayadi.   </p>
                 </div>
-                <div className='bg-light-gray m-5 rounded-lg p-6 border-2 border-card-border shadow-inner'>
+                <div className='bg-light-gray m-5 rounded-lg p-6 border-2 border-card-border shadow-inner cursor-pointer transform transition duration-300 ease-in-out hover:scale-105'>
                     <p className='mb-5'>
-                        Порталнинг бош саҳифаси очилганда солиқ органларининг ходими кириб келади ва фойдаланувчиларга янги порталнинг имкониятлари тўғрисида қисқача тушунтиришлар беради.
+                    Xavfsizlik, maxfiylik va tartiblilikni ta’minlash: Yangi raqamli platforma, ma’lumotlarni xavfsiz saqlash va tartiblilikni ta’minlashga qaratilgan. Bu platforma yuqori darajada xavfsizlik protokollari va maxfiylik tamoyillarini o‘z ichiga oladi, ma’lumotlarni maxfiy va himoyalangan sahifalarda saqlaydi. Buna qo‘shimcha ravishda, ma’lumotlarga kirish uchun avtorizatsiya va to‘g‘ridan-to‘g‘ri murojaatlar uchun xavfsizlik tizimlari ham qo‘llaniladi. Yangi raqamli platformaning asosiy maqsadi O‘zbekistondagi mahalliy iqtisodiy ko‘rsatkichlarni yig‘ib olish va analiz qilish, mahallalarning yo‘l tuzilish holatini, ishlab chiqarish hajmini, aholi sonini, tuproq tuzilish holatini, uy-joy bilan ta’minlanglik holatini kuzatish va boshqalar kabi ma’lumotlarni saqlash va taqdim etishdir.Bu platforma quyidagi iste’mol sohalarda foydalanilishi mumkin:
                     </p>
                     <div className='p-1.5 border-2 border-card-border shadow-inner rounded-lg bg-white'>
                         <img src={Portal1} alt="image" />
                     </div>
                 </div>
-                <div className='bg-light-gray m-5 rounded-lg p-6 border-2 border-card-border shadow-inner'>
+                <div className='bg-light-gray m-5 rounded-lg p-6 border-2 border-card-border shadow-inner cursor-pointer transform transition duration-300 ease-in-out hover:scale-105'>
                     <p className='mb-5'>
-                        Порталнинг яна бир қулайлиги - бу керакли хизматларни тез ва осон қидириш мумкинлиги. Бунда «Электрон ҳукумат тўғрисидаги» Қонун талабларидан келиб чиқиб, давлат солиқ хизмати органларининг барча электрон давлат хизматлари - интерактив ва ахборот давлат хизматларига сараланган. Бундан ташқари уларни қидиришни янада соддалаштириш мақсадида, мурожаатларни ва ҳисоботларни юбориш, рўйхатга олиш, солиқларни ҳисоблаш ва маълумотномалар олиш каби хизмат йўналишларига ажратилган.
+                    Iqtisodiy ko‘rsatkichlarni yig‘ish: Platforma, mahalliy iqtisodiy ko‘rsatkichlarni (oylik yoki yillik ishlab chiqarish hajmi, daromad, investitsiyalar, ish yuritish ma’lumotlari, soliq to‘lovlari kabi) to‘plab, barcha mahallalarning iqtisodiy holatini tahlil qilishga imkon beradi.
                     </p>
                     <div className='p-1.5 border-2 border-card-border shadow-inner rounded-lg bg-white'>
                         <img src={Portal2} alt="image" />

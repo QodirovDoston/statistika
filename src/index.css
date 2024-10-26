@@ -36,7 +36,7 @@
 /* components */
 @layer components {
   .nav-btn {
-    @apply border-2 border-light-gray px-2 py-0.5 rounded text-13 font-normal;
+    @apply border-2 border-light-gray rounded text-13 font-normal;
   }
 
   .header-btn {
@@ -51,3 +51,50 @@ a.active {
 /* .ant-table-wrapper {
   @apply !w-full;
 } */
+
+
+
+
+
+
+/* src/components/accordionItem.css */
+.accordion-content-enter {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 300ms ease-in-out, opacity 300ms ease-in-out;
+}
+
+.accordion-content-enter-active {
+  max-height: 200px;
+  opacity: 1;
+}
+
+.accordion-content-exit {
+  max-height: 200px;
+  opacity: 1;
+}
+
+.accordion-content-exit-active {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 300ms ease-in-out, opacity 300ms ease-in-out;
+}
+
+.icon {
+  transition: transform 0.3s ease;
+}
+
+.icon.open {
+  transform: rotate(180deg);
+}
+
+
+.footBG{
+  background-image: url('https://toshvilstat.uz/templates/uztailwind/images/bg-pattern.jpg');
+}
+
+.headBG{
+  background-image: url('https://my.soliq.uz/main/markup/images/bg-main.jpg')
+}

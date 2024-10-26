@@ -12,7 +12,7 @@ const Header = () => {
     },
     {
       link: '/eri',
-      title: 'ERI haqida'
+      title: 'Statistika agentliklari'
     },
     {
       link: '/questions',
@@ -37,11 +37,11 @@ const Header = () => {
               {/* header left */}
               <div className="space-y-1">
 
-                <h1>O‘ZBEKISTON RESPUBLIKASI PREZIDENTI HUZURIDAGI
-                STATISTIKA AGENTLIGI</h1>
+                <h1>O‘ZBEKISTON RESPUBLIKASI PREZIDENTI <br /> HUZURIDAGI
+                  STATISTIKA AGENTLIGI</h1>
 
                 <p className="text-white text-base font-medium">TOSHKENT VILOYATI
-                STATISTIKA BOSHQARMASI</p>
+                  STATISTIKA BOSHQARMASI</p>
                 <p className="font-dancing text-base font-normal text-white"></p>
 
               </div>
@@ -50,19 +50,10 @@ const Header = () => {
 
             {/* header right */}
             <div>
-              <div className="items-center space-x-2 ">
-                <p className="text-[#628AE6] text-sm font-normal cursor-pointer">Avtoinformator:</p>
-                <span className="text-base font-normal text-white ml-1 cursor-pointer">(93) 202-32-82</span>
-              </div>
-
-              <div className="flex items-center space-x-4 mt-5">
-                <button className="nav-btn text-white border text-sm hover:bg-white hover:text-blue duration-300 flex">
-                  <i class="bi bi-person-lines-fill mr-2"></i> Call
-                </button>
-
-                <button className="nav-btn text-white border text-sm hover:bg-white hover:text-blue duration-300 flex">
-                  <i class="bi bi-shield-fill-exclamation mr-2"></i>ERI qanday
-                  olinadi?
+              <div className="items-center mt-5">
+                <p className="text-[#628AE6] text-sm font-normal cursor-pointer mb-2">Ishonch telefonlari :</p>
+                <button className="nav-btn text-white border text-sm hover:bg-white hover:text-blue duration-300 flex px-5 py-2">
+                  <i className="bi bi-person-lines-fill mr-2"></i> (71) 203-45-00
                 </button>
               </div>
             </div>
@@ -72,11 +63,11 @@ const Header = () => {
       </div>
 
       {/* navbar */}
-      <nav className="container flex items-center justify-between py-5">
+      <nav className="container flex items-center justify-between py-3">
         <div className="flex space-x-5">
           <div>
             <Link to={`/`} className="inline-block nav-btn px-2.5">
-              <i class="bi bi-house-door-fill text-2xl text-blue"></i>
+              <i className="bi bi-house-door-fill text-2xl text-blue"></i>
             </Link>
           </div>
           <ul className="flex items-center justify-between space-x-5 mr-10">

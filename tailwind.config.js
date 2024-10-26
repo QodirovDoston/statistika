@@ -16,6 +16,7 @@ export default {
         "light-gray": "#f8f8f8",
         'card-border': 'rgba(245,245,245,0.67)',
         "black": "#333333",
+        'text_color':'#9A9797'
       },
       fontSize: {
         13: '13px',

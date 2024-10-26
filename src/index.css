@@ -1,0 +1,47 @@
+/* Open Sanas */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+  @apply max-w-1160 mx-auto px-5;
+}
+
+/* base */
+@layer base {
+  html {
+    font-family: "Open Sans", sans-serif;
+  }
+
+  h1 {
+    @apply font-bold text-3xl text-white;
+  }
+
+  h2 {
+    @apply font-normal text-2xl text-white;
+  }
+
+  h3 {
+    @apply font-normal text-lg text-white;
+  }
+}
+
+/* components */
+@layer components {
+  .nav-btn {
+    @apply border-2 border-light-gray px-2 py-0.5 rounded text-13 font-normal;
+  }
+
+  .header-btn {
+    @apply px-2 py-0.5  rounded-sm;
+  }
+}
+
+a.active {
+  @apply bg-blue text-white;
+}
+/* .ant-table-wrapper {
+  @apply !w-full;
+} */

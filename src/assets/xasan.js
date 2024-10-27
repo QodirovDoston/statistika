@@ -21,4 +21,19 @@ const card = [
         title:"Fuqarolar uchun uchun",
     }
 ]
-export { people_blue, people_blue2, people_green, logo, card, rasm, rasm2, rasm3}
+
+const registarion = [
+    {
+        img: people_green,
+        title: "Jismoniy Shaxslar uchun",
+    },
+    {
+        img: people_blue,
+        title:"Yuridik  Shaxslar uchun",
+    },
+    {
+        img: people_blue2,
+        title:"Fuqarolar uchun uchun",
+    }
+]
+export { people_blue, people_blue2, people_green, logo, card, registarion, rasm, rasm2, rasm3}

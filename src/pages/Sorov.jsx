@@ -32,7 +32,7 @@ const Sorov = () => {
         },
         {
             key: '2',
-            surov: '  Солиқ идоралари фаолияти бўйича',
+            surov: 'Statistika idoralari faoliyati boyicha',
             number: 4,
             ovozlar: '787',
             day: '	15.04.2021 - 15.06.2021'
@@ -40,7 +40,7 @@ const Sorov = () => {
         },
         {
             key: '3',
-            surov: ' Сизнинг солиқ хизматингиз',
+            surov: 'Sizning soliq Xizmatlaringiz',
             number: 7,
             ovozlar: '654',
             day: '	15.04.2021 - 15.06.2021'

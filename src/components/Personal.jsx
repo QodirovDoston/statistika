@@ -22,6 +22,7 @@ const Personal = () => {
                         ))}
                         <br />
                     </ul>
+
                     <ul className='text-center text-white bg-blue py-2 rounded'>
                         <li><a href="#">Shaxsiy Kabinet <br /> Orqali Yuboriladigon Elektron Xujjat</a></li>
                     </ul>

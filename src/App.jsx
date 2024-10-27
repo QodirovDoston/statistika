@@ -9,6 +9,8 @@ import { Route, Routes } from 'react-router'
 import Contact from './pages/Contact'
 import ERI from './pages/ERI'
 import Sorov from './pages/Sorov'
+import ChatBot from './components/ChatBot'
+import Carousel from './components/Carousel'
 
 const App = () => {
   return (
@@ -25,8 +27,12 @@ const App = () => {
           </Routes>
         </div>
         <Personal />
+        <ChatBot/>
       </main>
       </div>
+      <div className="bg-text_gray flex flex-col items-center">
+      <Carousel />
+    </div>
       <Footer />
     </>
   )

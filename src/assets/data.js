@@ -12,5 +12,5 @@ export {
     Portal1,
     Portal2,
     Loop,
-    QuestionIcon
+    QuestionIcon,
 }

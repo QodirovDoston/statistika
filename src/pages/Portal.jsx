@@ -1,14 +1,16 @@
 import React from 'react'
 import { Portal1, Portal2 } from '../assets/data'
 import RegistrationForm from '../components/RegistrationForm'
+import MetricCard from '../components/MetricCard';
 
 const Portal = () => {
+ 
     return (
         <section >
 
             <div className='bg-blue py-2 px-3 rounded-t-md'>
                 <h3>
-                Toshkent viloyati statistika boshqarmasi platformasiga xush kelibsiz!
+                    Toshkent viloyati statistika boshqarmasi platformasiga xush kelibsiz!
                 </h3>
             </div>
             <RegistrationForm />

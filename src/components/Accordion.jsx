@@ -16,7 +16,7 @@ const Accordion = ({ items }) => {
               href={item.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-13 font-bold underline text-blue-600 cursor-pointer"
+              className="text-13 font-bold underline text-[#0A5FE7] cursor-pointer"
             >
               {item.facality}
             </a>

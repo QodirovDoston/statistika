@@ -1,33 +1,27 @@
-// src/components/Accordion.jsx
-import React, { useState } from 'react';
-import AccordionItem from './AccordionItem';
+import React from 'react';
 
 const Accordion = ({ items }) => {
-  const [openIndexes, setOpenIndexes] = useState([]);
-
-  const handleToggle = (index) => {
-    setOpenIndexes((prevOpenIndexes) => {
-      if (prevOpenIndexes.includes(index)) {
-        return prevOpenIndexes.filter((i) => i !== index);
-      } else {
-        return [...prevOpenIndexes, index];
-      }
-    });
-  };
 
   return (
     <div className=" shadow-xl overflow-hidden">
       {items.map((item, index) => (
-        <AccordionItem
-          key={index}
-          title={item.title}
-          content={item.content}
-          facality={item.facality}
-          year={item.year}
-          link={item.link}
-          isOpen={openIndexes.includes(index)}
-          onClick={() => handleToggle(index)}
-        />
+        <div key={index} className="p-4">
+          <h2 className="text-lg font-semibold text-black mb-2">
+            {item.title}
+          </h2>
+          <div className="accordion-content px-4 py-2 bg-gray-50 text-text_color leading-relaxed shadow-inner">
+            {item.content}
+            <p className='text-[15px] text-black py-3 '>{item.year}</p>
+            <a
+              href={item.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-13 font-bold underline text-blue-600 cursor-pointer"
+            >
+              {item.facality}
+            </a>
+          </div>
+        </div>
       ))}
     </div>
   );

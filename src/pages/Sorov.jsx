@@ -49,7 +49,7 @@ const Sorov = () => {
     ];
 
     return (
-        <section>
+        <section className='container mx-auto pt-4 pb-[300px]'>
             <div className='bg-blue py-2 px-3 rounded-lg'>
                 <h3>
                     Сўровлар

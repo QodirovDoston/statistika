@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { AiOutlineMessage } from 'react-icons/ai';
+import { FaPaperPlane } from 'react-icons/fa';
 
 function ChatBot() {
     const [visible, setVisible] = useState(false); // Controls full chat window visibility
     const [initialMessageShown, setInitialMessageShown] = useState(false); // Controls initial greeting
     const [messages, setMessages] = useState([
-        { text: "Hello! How can I help you today?", sender: "bot" }
+        { text: "Salom! Bugun sizga qanday yordam bera olaman?", sender: "bot" }
     ]);
     const [inputValue, setInputValue] = useState("");
 
@@ -27,7 +28,7 @@ function ChatBot() {
 
             // Simulate bot response
             setTimeout(() => {
-                const botMessage = { text: "I'm here to help! What else can I assist you with?", sender: "bot" };
+                const botMessage = { text: "Men yordam berish uchun keldim! Yana nima bilan yordam bera olaman? ", sender: "bot" };
                 setMessages((prev) => [...prev, botMessage]);
             }, 1000);
         }
@@ -53,7 +54,7 @@ function ChatBot() {
             {visible && (
                 <div className="max-w-xl w-full md:max-w-md bg-white rounded-lg shadow-xl overflow-hidden animate-slide-up transition-all duration-500">
                     <div className="p-4 bgcolor text-white font-semibold flex justify-between items-center">
-                        ChatBot
+                        🤖 Yordamchi Bot
                         <button
                             onClick={() => setVisible(false)}
                             className="text-white hover:text-gray-200 transition text-[23px]"
@@ -79,17 +80,18 @@ function ChatBot() {
                             </div>
                         ))}
                     </div>
-                    <div className="flex border-t border-gray-300">
+                    <div className="flex border-t border-gray-300 p-2">
                         <input
                             type="text"
                             value={inputValue}
                             onChange={(e) => setInputValue(e.target.value)}
                             onKeyDown={(e) => e.key === "Enter" && handleSendMessage()}
-                            placeholder="Type a message..."
+                            placeholder="Xabar yozing..."
                             className="flex-1 p-2 border-none focus:outline-none"
                         />
-                        <button onClick={handleSendMessage} className="px-4 bg-blue text-white hover:bg-blue transition">
-                            Send
+                        <button onClick={handleSendMessage}  className="flex items-center bg-blue text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition duration-200">
+                            Yuborish
+                            <FaPaperPlane className="ml-2" size={20} />
                         </button>
                     </div>
                 </div>

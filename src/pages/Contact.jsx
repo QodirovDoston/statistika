@@ -3,13 +3,13 @@ import { Loop } from '../assets/data'
 
 const Contact = () => {
     return (
-        <section>
+        <section className='container mx-auto pt-4'>
             <div className='bg-blue py-2 px-3 rounded-lg'>
                 <h3>
                     Алоқа
                 </h3>
             </div>
-            <div className='p-5'>
+            <div className='p-5 bg-white'>
                 <div className='font-semibold space-y-3 mb-5'>
                     <p>
                         Порталдан фойдаланиш масалалари бўйича:
@@ -50,7 +50,7 @@ const Contact = () => {
             </div>
             <hr />
             <div className=' flex-col md:flex-row space-x-5 mt-8 items-center'>
-                <div className='bg-light-gray rounded-lg p-4'>
+                <div className='bg-white rounded-lg p-4'>
                     <p className='mb-3'>
                     Telegram guruhlari:
                     </p>

@@ -30,7 +30,7 @@ const Footer = () => {
               </div>
               <p className="text-sm text-white font-normal">Portal DSQ YaTIAM tomonidan ishlab chikilgan</p>
             </div>
-            <p className="text-[#628AE6]  text-sm font-normal"><i class="bi bi-telegram mr-1 text-base cursor-pointer"></i>Telegram:
+            <p className="text-[#628AE6]  text-sm font-normal"><i className="bi bi-telegram mr-1 text-base cursor-pointer"></i>Telegram:
               <a className="text-base font-normal text-white ml-1" href="#">@toshvilstatuz</a></p>
           </div>
 

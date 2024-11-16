@@ -25,7 +25,7 @@ const Portal = () => {
             <div className="footBG">
                 <div className="container bg-gradient-to-b from-blue-900 to-teal-600 text-white p-6">
                     <h1 className="text-center text-3xl font-bold mb-10">O'zbekiston Raqamlarda</h1>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
                         {data.map((metric, index) => (
                             <MetricCard key={index} {...metric} />
                         ))}
@@ -33,8 +33,8 @@ const Portal = () => {
                 </div>
             </div>
             <section className='container mx-auto px-5 pt-4' >
-                <div className='flex gap-4'>
-                    <div >
+                <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-5 gap-4'>
+                    <div className='col-start-1 col-span-1 sm:col-span-2 md:col-span-3 lg:col-span-3 xl:col-span-3 row-start-1 row-span-1' >
                         <div className='bg-blue py-2 px-3 rounded-t-md'>
                             <h3>
                                 Toshkent viloyati statistika boshqarmasi platformasiga xush kelibsiz!
@@ -76,13 +76,15 @@ const Portal = () => {
                             </div>
                         </div>
                     </div>
+                    <div className='col-span-1 sm:col-span-1 md:col-span-2 lg:col-span-2 xl:col-span-2 row-span-1 '>
                     <Personal />
+                    </div>
 
                 </div>
 
             </section>
             <div className="bg-text_gray flex flex-col items-center">
-                <Carousel />
+                {/* <Carousel /> */}
             </div>
         </div>
     )

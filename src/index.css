@@ -109,6 +109,9 @@ a.active {
   transform: rotate(180deg);
 }
 
+.persenal{
+  background-image: url('https://my.gov.uz/img/bg-search.png');
+}
 
 .footBG{
   background-image: url('https://kadastr.uz/public/assets/img/kadastr/back.jpg');

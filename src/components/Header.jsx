@@ -1,14 +1,10 @@
 import React from "react";
 import { headerLogo, Loop } from "../assets/data";
 import { FaFacebook, FaTwitter, FaLinkedin, FaTelegram, FaInstagram } from 'react-icons/fa';
-
 import { Input } from "antd";
 import { Link, NavLink } from "react-router-dom";
 
-
 const Header = () => {
-
-
   const nav_links = [
     {
       link: '/',
@@ -31,27 +27,20 @@ const Header = () => {
     <header className="shadow-header">
       <div className="bgcolor py-3">
         <div className="container">
-
           <div className="flex justify-between">
             <div className="flex items-center space-x-5">
               <div>
                 <img src={headerLogo} alt="header_logo" />
               </div>
-
               {/* header left */}
               <div className="space-y-1">
-
                 <h1>O‘ZBEKISTON RESPUBLIKASI PREZIDENTI <br /> HUZURIDAGI
                   STATISTIKA AGENTLIGI</h1>
-
                 <p className="text-white text-base font-medium">TOSHKENT VILOYATI
                   STATISTIKA BOSHQARMASI</p>
                 <p className="font-dancing text-base font-normal text-white"></p>
-
               </div>
             </div>
-
-
             {/* header right */}
             <div>
               <div className="items-center mt-5">

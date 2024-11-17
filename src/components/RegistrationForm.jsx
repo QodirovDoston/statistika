@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import { Toaster, toast } from 'sonner'
+import { useNavigate } from 'react-router-dom';
 
 function RegistrationForm() {
     const [activeTab, setActiveTab] = useState('login');
     const [showModal, setShowModal] = useState(false);
     const [isRegistered, setIsRegistered] = useState(false);
 
+    const navigate = useNavigate(); 
     const [formData, setFormData] = useState({
         name: '',
         birthDate: '',
@@ -23,34 +25,32 @@ function RegistrationForm() {
     const handleSubmit = (e) => {
         e.preventDefault();
         setIsRegistered(true);
-
-        // Simulate a delay for the success message (you can replace this with an actual API call)
         setTimeout(() => {
             setShowModal(false);
             toast.success(`Sahifangizga Xush kelibsiz ! ${formData.name}`, {
                 description: "Siz muvaffaqiyatli ro'yxatdan o'tdingiz",
             });
-            // Reset form data after successful registration
+            navigate('/dashboard');
             setFormData({
-                name: '',
-                birthDate: '',
-                passportSeries: '',
-                passportNumber: '',
-                email: '',
-                phone: '',
+                name:'',
+                birthDate:'',
+                passportSeries:'',
+                passportNumber:'',
+                email:'',
+                phone:'',
             });
         }, 1000);
     };
-
 
     const handleSubmitLog = (e) => {
         e.preventDefault();
         setIsRegistered(true);
         setTimeout(() => {
             setShowModal(false);
-            toast.success(`Sahifangizga Xush kelibsiz! ${formDatalog.name}`, {
+            toast.success(`Sahifangizga Xush kelibsiz! ${formDatalog.name}`,{
                 description: "Siz muvaffaqiyatli ro'yxatdan o'tdingiz",
             });
+            navigate('/dashboard');
             setFormDatalog({
                 name: '',
                 pass: '',

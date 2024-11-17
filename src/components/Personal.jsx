@@ -1,11 +1,19 @@
 import React from 'react'
 import { card, rasm, rasm2, rasm3 } from '../assets/xasan'
+import { useNavigate } from 'react-router-dom'
+
 
 const Personal = () => {
+
+    const navigate = useNavigate()  
+
+    const handleGoToDashboard = () => {
+        navigate('/dashboard') 
+    }
+
     return (
         <section>
             <div className="container">
-                {/* Top */}
                 <div className=''>
                     <h3 className='bg-blue rounded py-2 px-5'>Шахсий кабинетлар</h3>
                     <ul className='space-y-1'>
@@ -15,7 +23,9 @@ const Personal = () => {
                                 <div className='flex flex-col space-y-1'>
                                     <h3 className='!text-black text-sm sm:text-xl'>{i.title}</h3>
                                     <button className='bg-lite-green text-white rounded text-xs py-0.5'><i className="bi bi-table"> </i>Xizmatlar</button>
-                                    <button className='bg-lite-green text-white rounded text-xs py-0.5'><i className="bi bi-box-arrow-in-right"> </i>Kabinetga kirish</button>
+                                    <button  className='bg-lite-green text-white rounded text-xs py-0.5'
+                                    onClick={handleGoToDashboard} 
+                                    ><i className="bi bi-box-arrow-in-right"> </i>Kabinetga kirish</button>
                                     <button className='bg-lite-green text-white rounded text-xs py-0.5'><i className="bi bi-envelope"></i> Pochta</button>
                                 </div>
                             </li>

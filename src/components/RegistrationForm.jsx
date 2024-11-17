@@ -7,7 +7,7 @@ function RegistrationForm() {
     const [showModal, setShowModal] = useState(false);
     const [isRegistered, setIsRegistered] = useState(false);
 
-    const navigate = useNavigate(); 
+    const navigate = useNavigate();
     const [formData, setFormData] = useState({
         name: '',
         birthDate: '',
@@ -32,12 +32,12 @@ function RegistrationForm() {
             });
             navigate('/dashboard');
             setFormData({
-                name:'',
-                birthDate:'',
-                passportSeries:'',
-                passportNumber:'',
-                email:'',
-                phone:'',
+                name: '',
+                birthDate: '',
+                passportSeries: '',
+                passportNumber: '',
+                email: '',
+                phone: '',
             });
         }, 1000);
     };
@@ -47,7 +47,7 @@ function RegistrationForm() {
         setIsRegistered(true);
         setTimeout(() => {
             setShowModal(false);
-            toast.success(`Sahifangizga Xush kelibsiz! ${formDatalog.name}`,{
+            toast.success(`Sahifangizga Xush kelibsiz! ${formDatalog.name}`, {
                 description: "Siz muvaffaqiyatli ro'yxatdan o'tdingiz",
             });
             navigate('/dashboard');
@@ -89,23 +89,23 @@ function RegistrationForm() {
                 {activeTab === 'login' && (
                     <form onSubmit={handleSubmitLog} className="space-y-4">
                         <input type="text"
-                             placeholder="Name"
-                             id="pame"
-                             name="name"
-                             value={formDatalog.name}
-                             onChange={handleInputChangelog}
-                             required
-                              className="w-full p-2 border border-gray-300 rounded-md" />
+                            placeholder="Name"
+                            id="pame"
+                            name="name"
+                            value={formDatalog.name}
+                            onChange={handleInputChangelog}
+                            required
+                            className="w-full p-2 border border-gray-300 rounded-md" />
                         <div className="relative">
-                            <input 
-                             type="password"
-                             placeholder="Parol"
-                             id="pass"
-                             name="pass"
-                             value={formDatalog.pass}
-                             onChange={handleInputChangelog}
-                             required
-                             className="w-full p-2 border border-gray-300 rounded-md" />
+                            <input
+                                type="password"
+                                placeholder="Parol"
+                                id="pass"
+                                name="pass"
+                                value={formDatalog.pass}
+                                onChange={handleInputChangelog}
+                                required
+                                className="w-full p-2 border border-gray-300 rounded-md" />
                             <button className="absolute inset-y-0 right-2 flex items-center">👁️</button>
                         </div>
                         <button type="submit" className="w-full bg-blue hover:bg-lite-blue duration-300 text-white py-2 rounded-md">Kirish</button>
@@ -143,15 +143,15 @@ function RegistrationForm() {
 
                 {activeTab === 'telefon nomer' && (
                     <div className="space-y-4">
-                        <input 
-                         type="text"
-                         placeholder="Ism familya "
-                         id="Name"
-                         name="name"
-                         value={formData.name}
-                         onChange={handleInputChange}
-                         required
-                         className="w-full p-2 border border-gray-300 rounded-md" />
+                        <input
+                            type="text"
+                            placeholder="Ism familya "
+                            id="Name"
+                            name="name"
+                            value={formData.name}
+                            onChange={handleInputChange}
+                            required
+                            className="w-full p-2 border border-gray-300 rounded-md" />
                         <button className="w-full bg-blue hover:bg-lite-blue duration-300 text-white py-2 rounded-md">Register with Telefon nomer</button>
                     </div>
                 )}
@@ -271,13 +271,6 @@ function RegistrationForm() {
                                     * Diqqat! Ro'yxatdan o'tish uchun nomingizga ro'yxatga qo'yilgan telefon raqamingizni kiriting!
                                 </p>
                                 <button
-                                    // onClick={() => setFormData({
-                                    //     birthDate: '',
-                                    //     passportSeries: '',
-                                    //     passportNumber: '',
-                                    //     email: '',
-                                    //     phone: '',
-                                    // })}
                                     type="submit"
                                     className="w-full mt-4 bg-blue hover:bg-lite-blue text-white py-2 rounded-md focus:outline-none"
                                 >
